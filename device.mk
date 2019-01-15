@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.mokee.touch@1.0-service.nut
+
 # USB ID
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.vid=2717 \
