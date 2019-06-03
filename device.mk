@@ -65,6 +65,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# FM
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl \
+    libfmjni \
+    FMRadio
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916

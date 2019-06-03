@@ -51,6 +51,10 @@ on post-fs-data
     mkdir /data/nfc/param 0770 nfc nfc
 
 on boot
+    # FM
+    chown system system /sys/module/radio_iris_transport/parameters/fmsmd_set
+    chmod 0660 /sys/module/radio_iris_transport/parameters/fmsmd_set
+
     # NFC
     chmod 0660 /dev/pn544
     chown nfc nfc /dev/pn544
