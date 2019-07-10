@@ -20,6 +20,9 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/smartisan/nut
 
+# Architecture
+FORCE_32_BIT := true
+
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := nut,msm8916_32,msm8916_32_603,msm8916_32_cmcc,msm8916_32_cdma,msm8916_32_younger,msm8916_32_603_younger,msm8916_32_cmcc_younger,msm8916_32_cdma_younger
 
