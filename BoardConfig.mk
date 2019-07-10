@@ -76,6 +76,9 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 TARGET_KERNEL_SOURCE := kernel/smartisan/msm8939
 TARGET_KERNEL_CONFIG := mokee_nut_defconfig
 
+# Keymaster
+TARGET_PROVIDES_KEYMASTER := true
+
 # Power
 TARGET_HAS_NO_POWER_STATS := true
 
