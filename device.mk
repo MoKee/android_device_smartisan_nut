@@ -75,10 +75,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    keystore.msm8916
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.aw2013
