@@ -94,8 +94,7 @@ BOARD_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy
 
 # Shims
-TARGET_LD_SHIM_LIBS += \
-    /system/vendor/bin/mm-qcamera-daemon|libshim_camera.so:/system/vendor/bin/perfd|libshim_atomic.so
+TARGET_LD_SHIM_LIBS += /system/vendor/bin/mm-qcamera-daemon|libshim_camera.so
 
 # inherit from the proprietary version
 include vendor/smartisan/nut/BoardConfigVendor.mk
