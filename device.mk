@@ -73,7 +73,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.target.rc
 
 # Lights
 PRODUCT_PACKAGES += \
