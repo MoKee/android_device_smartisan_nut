@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.qcom.bms.sh \
     init.target.rc
 
 # Lights
