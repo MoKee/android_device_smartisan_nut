@@ -97,6 +97,10 @@ persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 persist.data.target=dpm1
 
+# NFC
+ro.nfc.port=I2C
+ro.hardware.nfc_nci=nqx.default
+
 # NITZ
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
