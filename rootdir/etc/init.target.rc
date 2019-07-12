@@ -46,3 +46,12 @@ service bms-sh /vendor/bin/sh /vendor/bin/init.qcom.bms.sh
     class core
     user root
     oneshot
+
+on post-fs-data
+    # NFC
+    mkdir /data/nfc/param 0770 nfc nfc
+
+on boot
+    # NFC
+    chmod 0660 /dev/pn544
+    chown nfc nfc /dev/pn544
