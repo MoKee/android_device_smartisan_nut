@@ -5,6 +5,8 @@ lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so:vendor/lib/libmmjpeg_interface.so
 lib/libqomx_core.so:vendor/lib/libqomx_core.so
+vendor/lib/libjpegdhw.so|8570440efd5543d6bbfcfcab014ed9c38f557712
+vendor/lib/libjpegehw.so|41b3b1f63282423ecf0fb81e2c591d461f72a736
 vendor/lib/libmmcamera_S5K4E1_13P1BA.so
 vendor/lib/libmmcamera_SKUAA_ST_gc0339.so
 vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so
@@ -86,7 +88,11 @@ vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
+vendor/lib/libmmjpeg.so|0db2f71961928a3293927686b1e68ac7c34e84df
+vendor/lib/libmmqjpeg_codec.so|b6f615db0f385294c8e74639ff7e547e4189a425
 vendor/lib/liboemcamera.so
+vendor/lib/libqomx_jpegdec.so|770c342249043ee44d8e645bc4b4973ade62f78e
+vendor/lib/libqomx_jpegenc.so|b7721d05fce48357bf17431a5f27ee5ba0e20f83
 
 # Camera actuator
 vendor/lib/libactuator_a3907.so
