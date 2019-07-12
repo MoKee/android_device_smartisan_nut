@@ -432,6 +432,10 @@ etc/firmware/venus.b04:vendor/firmware/venus.b04
 etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
+# NFC
+etc/nfcee_access.xml
+lib/hw/nfc_nci.pn54x.default.so:vendor/lib/hw/nfc_nci.pn54x.default.so
+
 # NFC firmware
 vendor/firmware/libpn547_fw.so
 
