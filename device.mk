@@ -52,6 +52,7 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl \
+    camera.msm8916 \
     libshim_camera
 
 PRODUCT_PACKAGES += \
