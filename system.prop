@@ -49,4 +49,4 @@ rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.telephony.call_ring.multiple=false
 ril.subscription.types=NV,RUIM
 persist.radio.multisim.config=dsds
-ro.telephony.default_network=9,9
+ro.telephony.default_network=22,1
