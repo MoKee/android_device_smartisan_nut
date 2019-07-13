@@ -1,8 +1,17 @@
 # Audio
+audio.dolby.ds2.enabled=true
 ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=false
+ro.dirac.acs.controller=afm
+ro.dirac.acs.ignore_error=1
+ro.dirac.afm.mode=local
+ro.dirac.max_active.headset=3
+ro.dirac.max_active.powersound=3
+ro.fm.transmitter=false
+tunnel.audio.encode=false
+use.voice.path.for.pcm.voip=true
 
 # Camera
 persist.camera.cpp.duplication=false
