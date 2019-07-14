@@ -98,6 +98,7 @@ persist.radio.snapshot_timer=3
 persist.radio.start_ota_daemon=1
 persist.radio.use_nv_for_ehrpd=true
 ro.telephony.default_network=22,1
+ro.telephony.ril.config=simactivation
 telephony.lteOnCdmaDevice=1
 
 # Sensors
