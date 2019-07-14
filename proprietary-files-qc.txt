@@ -27,12 +27,35 @@ vendor/lib/librpmb.so
 vendor/lib/libssd.so
 
 # GPS
+bin/garden_app:vendor/bin/garden_app
+bin/gpsone_daemon:vendor/bin/gpsone_daemon
+bin/loc_launcher:vendor/bin/loc_launcher
+bin/location-mq:vendor/bin/location-mq
+bin/lowi-server:vendor/bin/lowi-server
+bin/xtwifi-client:vendor/bin/xtwifi-client
+bin/xtwifi-inet-agent:vendor/bin/xtwifi-inet-agent
+etc/permissions/com.qualcomm.location.vzw_library.xml
+framework/com.qualcomm.location.vzw_library.jar
 lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so
 lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so
+vendor/bin/slim_ap_daemon
 vendor/lib/hw/flp.default.so
+vendor/lib/libalarmservice_jni.so
+vendor/lib/libasn1cper.so
+vendor/lib/libasn1crt.so
+vendor/lib/libasn1crtx.so
+vendor/lib/libgdtap.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
+vendor/lib/libloc_ext.so
+vendor/lib/liblocationservice.so
+vendor/lib/liblowi_client.so
+vendor/lib/libquipc_os_api.so
+vendor/lib/libulp2.so
+vendor/lib/libxt_native.so
+vendor/lib/libxtadapter.so
+vendor/lib/libxtwifi_ulp_adaptor.so
 
 # Graphics (From crackling)
 vendor/lib/egl/eglSubDriverAndroid.so|6f5ae2f50bae4917173bc1f23eedbb932e068994
