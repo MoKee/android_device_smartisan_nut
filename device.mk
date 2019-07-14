@@ -75,6 +75,7 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.qcom.sh \
     init.qcom.bms.sh \
     init.target.rc
 
