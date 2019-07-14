@@ -48,6 +48,10 @@ service bms-sh /vendor/bin/sh /vendor/bin/init.qcom.bms.sh
     oneshot
 
 on post-fs-data
+    # IMS
+    mkdir /data/shared 0755
+    chown system system /data/shared
+
     # NFC
     mkdir /data/nfc/param 0770 nfc nfc
 
@@ -55,3 +59,33 @@ on boot
     # NFC
     chmod 0660 /dev/pn544
     chown nfc nfc /dev/pn544
+
+service imsqmidaemon /system/vendor/bin/imsqmidaemon
+    class main
+    user system
+    socket ims_qmid stream 0660 system radio
+    group radio log diag
+
+service imsdatadaemon /system/vendor/bin/imsdatadaemon
+    class main
+    user system
+    socket ims_datad stream 0660 system radio
+    group system wifi radio inet log diag
+    disabled
+
+on property:sys.ims.QMI_DAEMON_STATUS=1
+    start imsdatadaemon
+
+service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
+    class main
+    user system
+    group radio diag inet log
+    disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start ims_rtp_daemon
+
+service qcom-sh /vendor/bin/sh /vendor/bin/init.qcom.sh
+    class late_start
+    user root
+    oneshot
