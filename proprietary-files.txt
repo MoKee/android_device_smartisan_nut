@@ -1,3 +1,6 @@
+# Audio
+vendor/lib/libhwdaphal.so
+
 # Audio - ACDB
 etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 etc/acdbdata/QRD/QRD_General_cal.acdb
@@ -420,8 +423,15 @@ etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
 # Charger
 bin/vm_bms:vendor/bin/vm_bms
 
+# Graphics firmware
+etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw
+
 # Keymaster
 lib/hw/keystore.qcom.so:vendor/lib/hw/keystore.msm8916.so
+
+# Media
+lib/libOmxVdecHevc.so:vendor/lib/libOmxVdecHevc.so
 
 # Media firmware
 etc/firmware/venus.b00:vendor/firmware/venus.b00
@@ -441,3 +451,6 @@ lib/hw/sensors_bosch.msm8916.so:vendor/lib/sensors_bosch.msm8916.so
 vendor/etc/calmodule.cfg
 vendor/lib/libcalmodule_akm.so
 vendor/lib/libcalmodule_gyroscope.so
+
+# Sound Trigger
+vendor/lib/hw/sound_trigger.primary.msm8916.so
