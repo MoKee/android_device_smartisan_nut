@@ -37,6 +37,7 @@ fi
 CLEAN_VENDOR=true
 
 SRC=$1
+SRC_QC=$2
 
 if [ -z "$SRC" ]; then
     SRC=adb
@@ -46,11 +47,6 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
-extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
+extract "$MY_DIR"/proprietary-files-qc.txt "$SRC_QC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh
-
-BLOB_ROOT="$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
-
-# Thermal
-sed -i 's|/system/etc/|/vendor/etc/|g' $BLOB_ROOT/vendor/bin/thermal-engine
